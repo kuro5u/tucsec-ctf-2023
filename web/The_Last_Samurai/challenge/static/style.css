@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'menmaren';
+  src: url('/static/menmaren.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+    background-color: #222121;
+    color: #b06935;
+}
+
+body {
+  font-family: 'menmaren', sans-serif;
+  font-size: 30px;
+    margin: 0;
+    overflow: hidden;
+}
+
+#image-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+}
+
+#samurai-image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img {
+    filter: invert(46%) sepia(41%) saturate(747%) hue-rotate(343deg) brightness(90%) contrast(86%);
+}
+
+input {
+    border: 0;
+    outline: 0;
+    font-family: 'menmaren';
+    font-size: larger;
+    background: transparent;
+    border-bottom: 2px solid #b06935;
+    color: #b06935; 
+  }
+

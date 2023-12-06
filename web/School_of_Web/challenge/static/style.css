@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'royal-acidbath';
+  src: url('/path-to/royal-acidbath.woff2') format('woff2'),
+       url('/path-to/royal-acidbath.woff') format('woff'),
+       url('/path-to/royal-acidbath.ttf')  format('truetype');
+}
+
+body {
+  font-family: 'royal-acidbath', sans-serif;
+}

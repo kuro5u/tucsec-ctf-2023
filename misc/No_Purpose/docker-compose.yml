@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  bot:
+    container_name: bot_svc
+    build:
+      context: ./bot
+
+  calculator:
+    container_name: bot_calc
+    build:
+      context: ./calculator

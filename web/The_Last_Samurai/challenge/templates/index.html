@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Last Samurai</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>What would you say if you were a samurai</h1>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="image-container">
+        <img src="static/samurai.png" id="samurai-image" alt="Samurai Image">
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

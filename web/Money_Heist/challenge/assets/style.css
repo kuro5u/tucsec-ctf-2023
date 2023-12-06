@@ -1,0 +1,79 @@
+
+body, html {
+  height: 100%;
+  font-family: 'Oswald', sans-serif;
+}
+
+body{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:  url("/static/bg.jpg");
+}
+
+.container{
+  width: 800px;
+  margin: 0 auto;
+  background-color: rgba(234, 179, 179, 0.6);
+  border-radius: 1em;
+  padding: 1em;
+  text-align: center;
+  color: black;
+  box-shadow: 0 0 20px;
+  backdrop-filter: blur(5px);
+  margin-bottom: 3em;
+}
+
+
+.container a{
+  display: block;
+  width: 10em;
+  height: 13em;
+  border-radius: 1em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.container a:visited{
+    color: black;
+    
+}
+
+img {
+    width: 10em;
+}
+
+.vaults {
+  display: block ruby;
+  overflow: scroll;
+}
+
+input[type=file] {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+input[type=file]:valid {
+    background-color: black;
+}
+
+.upload_space {
+  height: 10em;
+  border: dashed rgb(234, 40, 40);
+  border-radius: 1em;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.upload_text {
+  position: absolute;
+  top: 70;
+  left: 0;
+  right: 0;
+  font-size: 4em;
+}
