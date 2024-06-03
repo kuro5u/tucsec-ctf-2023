@@ -21,7 +21,7 @@ RUN groupadd -r ctf && useradd -r -g ctf ctf
 RUN mkdir -p /home/ctf
 
 # Challenge files
-COPY --chown=ctf challenge/ /home/ctf/
+COPY --chown=ctf flag.txt /home/ctf/
 
 # Set some proper permissions
 RUN chown -R root:ctf /home/ctf
