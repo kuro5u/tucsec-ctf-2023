@@ -22,6 +22,6 @@ Notice that not all challenges include all of the above folders and files.
 * `build_docker.sh`: Bash script that automates the building and deployment of the docker for the challenge.
 
 ### How to Play
-If you want to try out a challenge properly without getting spoiled you should start by reading the `README.md` of that challenge. You can use everything included in the `challenge` directory. If the challenge contains a `Dockerfile`, you have to set up the docker locally. For this purpose there is a `build_docker.sh` script which should automate that process. When the docker is up and running, try to exploit the app running on the docker to retrieve the **flag** from inside. G00d 1uck!
+If you want to try out a challenge, you should start by reading the `README.md` file of that challenge. You can use everything included in the `challenge` directory. You must **not** use the files in the `source` folder. If the challenge contains a `Dockerfile`, you have to set up the docker locally. For this purpose there is a `build_docker.sh` script which should automate the process. When the docker is up and running, try to exploit the app running on the docker to retrieve the **flag** from inside. G00d 1uck!  
 
 ![TUCsec CTF 2023](https://www.ece.tuc.gr/fileadmin/_processed_/d/f/csm_ctf-2023-poster_fc1da4ef69.png)
