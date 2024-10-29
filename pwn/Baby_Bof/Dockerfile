@@ -5,7 +5,8 @@ RUN apk update && apk add socat build-base
 RUN addgroup -S ctf && adduser -S -G ctf ctf
 RUN mkdir -p /home/ctf
 
-COPY --chown=ctf challenge/ /home/ctf
+COPY --chown=ctf challenge/main.c /home/ctf
+COPY --chown=ctf source/ /home/ctf
 
 WORKDIR /home/ctf
 

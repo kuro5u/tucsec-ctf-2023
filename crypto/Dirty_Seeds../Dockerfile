@@ -4,6 +4,7 @@ RUN groupadd -r ctf && useradd -r -g ctf ctf
 RUN mkdir -p /home/ctf
 
 COPY --chown=ctf challenge/ /home/ctf/
+COPY --chown=ctf source/flag.txt /home/ctf/
 
 WORKDIR /home/ctf
 

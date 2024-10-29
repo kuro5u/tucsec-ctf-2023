@@ -9,7 +9,8 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN groupadd -r ctf && useradd -r -g ctf ctf
 RUN mkdir -p /home/ctf
 
-COPY --chown=ctf challenge/ /home/ctf/
+COPY --chown=ctf challenge/main.c /home/ctf/
+COPY --chown=ctf source/ /home/ctf/
 
 WORKDIR /home/ctf
 RUN make

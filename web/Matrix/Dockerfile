@@ -3,8 +3,8 @@ WORKDIR /app
 RUN apk add --update \
     curl \
     && rm -rf /var/cache/apk/*
-COPY . .
-COPY flag /
+COPY source/ .
+RUN mv flag /
 RUN pip install -r requirements.txt
-EXPOSE 5000
+EXPOSE 1337
 CMD ["python", "app.py"]
